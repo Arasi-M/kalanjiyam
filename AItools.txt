@@ -1,1 +1,9 @@
 This file will list some opinions about the AI tools that i am exploring
+
+Rest analysis
+*************
+1) IBM Watson Reqts Quality Assistant
+2) Reqtest : Reqs mgmt tool
+3) REQCCHECKER : Reqts analysis tool
+
+
