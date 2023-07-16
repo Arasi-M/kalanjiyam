@@ -1,0 +1,19 @@
+// This file lists all the issues faced during selenium setup and execution
+How to setup Path in MacOS
+***************************
+  nano ~/.bash_profile
+  export PATH=$PATH:/<Path to your selenium chrome driver>
+Save & close bash_profile
+  echo $PATH //To verify if the path is set
+To apply changes to current terminal session, type
+  source ~/.bash_profile
+If the path is reflected, verify the path of bash_profile you are editing. 
+Make sure you are editing from user's home directory using the command,
+  ls -al ~/.bash_profile
+
+Failed to load Chrome browser
+******************************
+Incorrect path specified till the folder level.
+Specify till the chromedriver.exe path in the set property for "webdriver.chrome.driver"
+
+
