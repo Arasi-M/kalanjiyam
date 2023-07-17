@@ -2,6 +2,8 @@ package arasi.learn;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.GeckoDriverInfo;
 
 /**
  * Hello world!
@@ -9,12 +11,21 @@ import org.openqa.selenium.chrome.ChromeDriver;
  */
 public class App 
 {
+    public static String prt ="";
     public static void main( String[] args )
     {
         System.out.println( "Hello Sai Appa!" );
         System.setProperty("webdriver.chrome.driver","/Users/arasi/Library/Mobile Documents/com~apple~CloudDocs/Arasi/Study/BrowserDriver/chromedriver_mac64/chromedriver");
-
-        WebDriver driver = new ChromeDriver();
-
+ /*       WebDriver driver = new ChromeDriver();
+//        System.setProperty("webdriver.gecko.driver","/Users/arasi/Library/Mobile Documents/com~apple~CloudDocs/Arasi/Study/BrowserDriver/geckodriver");
+//        WebDriver driver = new FirefoxDriver();
+        driver.get("http://www.amazon.in");
+        prt = driver.getTitle();
+        System.out.println("TItle of the web page is "+driver.getTitle());
+        System.out.println("Current URL is "+driver.getCurrentUrl());
+        driver.close();
+  */
+        corebasic obj = new corebasic();
+        obj.strexamples();
     }
 }
