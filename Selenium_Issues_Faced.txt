@@ -17,3 +17,19 @@ Incorrect path specified till the folder level.
 Specify till the chromedriver.exe path in the set property for "webdriver.chrome.driver"
 
 
+JAVA Issues:
+*************
+1) UnsupportedOperationException occurs when trying to add elements to an arryalist created using Arrays.asList
+
+The UnsupportedOperationException occurs when trying to modify an immutable list that is created from an array using the Arrays.asList() method. The Arrays.asList() method creates a fixed-size list backed by the original array, which means that you cannot add or remove elements from the list.
+
+To overcome this issue, you can create a new ArrayList from the Arrays.asList() result, which will create a mutable list:
+
+Eg:
+ List<String> fixedSizeList = Arrays.asList(arr);   // This creates an IMMUTABLE list
+ List<String> mutableLst = new ArrayList<String>(Arrays.asList(arr)); // This creates a mutable list
+
+
+       
+
+
