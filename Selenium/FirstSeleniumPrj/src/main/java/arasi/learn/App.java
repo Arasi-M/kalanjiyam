@@ -25,7 +25,16 @@ public class App
         System.out.println("Current URL is "+driver.getCurrentUrl());
         driver.close();
   */
+        App appobj = new App();
+        appobj.ownMethod();
+
         corebasic obj = new corebasic();
         obj.strexamples();
+
+    }
+
+    public void ownMethod()
+    {
+        System.out.println("This method belongs to the same class as you !");
     }
 }
