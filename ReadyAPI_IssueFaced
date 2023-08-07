@@ -1,0 +1,8 @@
+Path Parameter:
+*****************
+Uset the type 'TEMPLATE' and Path parameter should be enclosed within curly braces to identify it as a path parameter.
+
+eg: /api/abcd/{path-param1}
+
+
+
