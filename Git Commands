@@ -1,0 +1,13 @@
+
+cd /path/to/ur/repo
+git init
+git remote add <remote Repo name> <remote repo-URL>
+git add .
+git commit -m "Initial version"
+git branch -m <current branch name> <new branch name>
+git push -u <remote Repo name> <branch name>
+
+eg: git remote add origin https://github.com/abc/repo.git
+
+
+
