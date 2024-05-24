@@ -24,13 +24,24 @@ public class App
         System.out.println("TItle of the web page is "+driver.getTitle());
         System.out.println("Current URL is "+driver.getCurrentUrl());
         driver.close();
-  */
+
         App appobj = new App();
         appobj.ownMethod();
 
         corebasic obj = new corebasic();
-        obj.strexamples();
+        obj.strexamples();˳
 
+        fibonacci fb = new fibonacci();
+        fb.generateFibSeries();
+
+        // stringExamples obj = new stringExamples();
+        System.out.println("\nString Literal is "+ stringExamples.strLiteral );
+        System.out.println("String is "+ stringExamples.str1 +"\n");
+*/      String output = stringExamples.prtReverse("ARASI");
+        System.out.println(output);
+        System.out.println("Substring is "+output.substring(1,3));
+        System.out.println("\n--"+stringExamples.strLiteral.trim()+"--Trims only at the front & back");
+        stringExamples.isPalindrome("Sairam");
     }
 
     public void ownMethod()
